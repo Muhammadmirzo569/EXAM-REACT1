@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import imgs from "../../assets/imgs.png";
 import img1 from "../../assets/imgs_1.png";
-import img2 from "../../assets/imgs_2.png";
+// import img2 from "../../assets/imgs_2.png"; ❌ BU YERNI OLIB TASHLAYMIZ
 import "./Income.css";
 
 const products = [
@@ -22,18 +22,17 @@ const products = [
     title: "Landing Page 3D max",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
-  {
-    img: img2,
-    title: "Collab Illustration",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
+  // img2 yo‘q bo‘lsa, bu obyektni ham olib tashlaymiz:
+  // {
+  //   img: img2,
+  //   title: "Collab Illustration",
+  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  // },
 ];
 
 const Income = () => {
   return (
     <div className="income-wrapper">
-
-
       <div className="income-content">
         <div className="income-topbar">
           <h1>Product Sell</h1>
