@@ -1,0 +1,151 @@
+.income-wrapper {
+  padding: 40px 80px;
+}
+
+.income-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.income-search {
+  width: 216px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.income-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+}
+
+.income-content {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.income-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.income-filters {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.income-search-small {
+  width: 216px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.income-search-small input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  width: 100%;
+}
+
+.income-btn {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  font-size: 16px;
+  color: rgba(181, 183, 192, 1);
+  cursor: pointer;
+}
+
+.income-headings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.income-columns {
+  display: flex;
+  gap: 100px;
+  color: rgba(181, 183, 192, 1);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.income-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.income-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.income-item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.income-item-left img {
+  width: 60px;
+  height: 60px;
+  
+  border-radius: 10px;
+}
+
+.income-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.income-item-info span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.income-item-info p {
+  font-size: 16px;
+  color: rgba(181, 183, 192, 1);
+}
+
+.income-item-right {
+  display: flex;
+  gap: 140px;
+  font-size: 18px;
+  color: #000;
+}
