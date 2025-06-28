@@ -15,8 +15,6 @@ function Product() {
             <span className="product-title">Earning</span>
             <h3 className="product-amount">$198k</h3>
             <p className="product-change">
-              <TiArrowUp size={20} color="green" />
-              37.8% this month
             </p>
           </div>
         </div>
@@ -27,8 +25,6 @@ function Product() {
             <span className="product-title">Balance</span>
             <h3 className="product-amount">$2.4k</h3>
             <p className="product-change">
-              <TiArrowDown size={20} color="red" />
-              2% this month
             </p>
           </div>
         </div>
@@ -39,8 +35,6 @@ function Product() {
             <span className="product-title">Total Sales</span>
             <h3 className="product-amount">$89k</h3>
             <p className="product-change">
-              <TiArrowUp size={20} color="green" />
-              11% this week
             </p>
           </div>
         </div>

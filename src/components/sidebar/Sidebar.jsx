@@ -8,60 +8,46 @@ import {
   PiMegaphone,
   PiQuestion,
 } from "react-icons/pi";
-import "./Sidebar.css";
+import "./Sidebar.css"; // CSS faylni import qilamiz
 
-function Sidebar() {
+const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
+  const menuItems = [
+    { path: "/dashboard", icon: <PiCubeBold />, label: "Dashboard" },
+    { path: "/product", icon: <AiOutlineProduct />, label: "Product" },
+    { path: "/customers", icon: <PiUserCircle />, label: "Customers" },
+    { path: "/income", icon: <PiWallet />, label: "Income" },
+    { path: "/promote", icon: <PiMegaphone />, label: "Promote" },
+    { path: "/help", icon: <PiQuestion />, label: "Help" },
+  ];
+
   return (
-    <div className="sidebar">
-      <div className="sidebar-container">
-        <h2 className="sidebar-toggle" onClick={() => setOpen(!open)}>
+    <div className={`sidebar ${open ? "collapsed" : ""}`}>
+      <div className="sidebar-inner">
+        <h2 className="sidebar-logo" onClick={() => setOpen(!open)}>
           <PiCubeBold />
-          <span>Dashboard</span>
+          {!open && "Dashboard"}
         </h2>
 
         <ul className="sidebar-menu">
-          <li>
-            <NavLink to="/dashboard" className="sidebar-link">
-              <PiCubeBold />
-              <span className="sidebar-label">Dashboard</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/product" className="sidebar-link">
-              <AiOutlineProduct />
-              <span className="sidebar-label">Product</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/customers" className="sidebar-link">
-              <PiUserCircle />
-              <span className="sidebar-label">Customers</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/income" className="sidebar-link">
-              <PiWallet />
-              <span className="sidebar-label">Income</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/promote" className="sidebar-link">
-              <PiMegaphone />
-              <span className="sidebar-label">Promote</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/help" className="sidebar-link">
-              <PiQuestion />
-              <span className="sidebar-label">Help</span>
-            </NavLink>
-          </li>
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  `sidebar-link ${isActive ? "active" : ""}`
+                }
+              >
+                {item.icon}
+                {!open && <span className="link-label">{item.label}</span>}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
   );
-}
+};
 
 export default Sidebar;
